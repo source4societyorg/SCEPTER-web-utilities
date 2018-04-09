@@ -1,8 +1,10 @@
-import { getConfiguration } from '../src/configuration';
+import { loadConfiguration, getConfigurationByKey } from '../src/configuration';
 
-test('getConfiguration retrieves the proper setting from the web based configuration setup', (done) => {
+
+test('getConfigurationByKey retrieves the proper setting from the web based configuration setup after being loaded', (done) => {
   async function test() {
-    expect(await getConfiguration('GTM', '../tests/configuration.json')).toEqual('mockGTM');
+    const configuration = await loadConfiguration('../tests/configuration.json');
+    expect(getConfigurationByKey('GTM', configuration)).toEqual('mockGTM');
     done();
   }
   test();
