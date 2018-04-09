@@ -1,6 +1,6 @@
 {
   "name": "@source4society/scepter-web-utilities",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Web specific implementations of SCEPTER universal utility functions for cross platform compatibility",
   "main": "lib/configuration.js",
   "repository": "https://github.com/source4societyorg/SCEPTER-web-utilities.git",
