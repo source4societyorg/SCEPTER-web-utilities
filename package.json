@@ -1,15 +1,15 @@
 {
-  "name": "@source4society/yourcomponentname",
+  "name": "@source4society/scepter-web-utilities",
   "version": "1.0.0",
-  "description": "Add your description here",
-  "main": "lib/index.js",
-  "repository": "https://github.com/source4societyorg/yourrepository.git",
+  "description": "Web specific implementations of SCEPTER universal utility functions for cross platform compatibility",
+  "main": "lib/configuration.js",
+  "repository": "https://github.com/source4societyorg/SCEPTER-web-utilities.git",
   "author": "Source 4 Society",
   "license": "AGPL-3.0",
   "private": false,
   "scripts": {
     "test": "eslint ./src/*.js ./tests/*.js && jest --coverage",
-    "build": "babel src/index.js --minified --out-file lib/index.js",
+    "build": "babel src/configuration.js --minified --out-file lib/configuration.js && babel src/loadImage.js --minified --out-file lib/loadImage.js",
     "prepublish": "npm run build"
   },
   "jest": {
