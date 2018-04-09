@@ -1,7 +1,6 @@
 
-export function getConfigurationByKey(key, configuration) {
-  const stage = process.env.NODE_ENV;
-  return configuration.environments[stage][key];
+export function getConfigurationByKey(key, configuration, environment) {
+  return configuration.environments[environment][key];
 }
 
 export async function loadConfiguration(configurationPath) {
