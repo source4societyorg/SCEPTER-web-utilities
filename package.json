@@ -1,6 +1,6 @@
 {
   "name": "@source4society/scepter-web-utilities",
-  "version": "3.2.1",
+  "version": "3.3.0",
   "description": "Web specific implementations of SCEPTER universal utility functions for cross platform compatibility",
   "main": "lib/configuration.js",
   "repository": "https://github.com/source4societyorg/SCEPTER-web-utilities.git",
@@ -9,7 +9,7 @@
   "private": false,
   "scripts": {
     "test": "eslint ./src/*.js ./tests/*.js && jest --coverage",
-    "build": "babel src/mediaQuery.js --minified --out-file lib/mediaQuery.js && babel src/configuration.js --minified --out-file lib/configuration.js && babel src/loadImage.js --minified --out-file lib/loadImage.js",
+    "build": "babel src/styles.js --minified --out-file lib/styles.js && babel src/mediaQuery.js --minified --out-file lib/mediaQuery.js && babel src/configuration.js --minified --out-file lib/configuration.js && babel src/loadImage.js --minified --out-file lib/loadImage.js",
     "prepublish": "npm run build"
   },
   "jest": {
